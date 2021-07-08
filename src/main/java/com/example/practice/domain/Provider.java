@@ -1,18 +1,15 @@
 package com.example.practice.domain;
 
 import javax.persistence.*;
-import java.util.Date;
 
-public class Sale {
+public class Provider {
     @Id
     private long id;
 
-    @OneToOne
-    private User buyer;
+    private String nameOfOrganization;
 
     @OneToOne
     private Product product;
 
-    private Date dateOfOperation;
-
+    private double discount;
 }

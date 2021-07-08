@@ -8,7 +8,7 @@ public class User {
     @Id
     private long id;
 
-    private String username;
+    private String userName;
 
     @ManyToOne
     private Role role;
