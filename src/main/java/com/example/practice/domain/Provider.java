@@ -2,6 +2,7 @@ package com.example.practice.domain;
 
 import javax.persistence.*;
 
+@Entity
 public class Provider {
     @Id
     private long id;
