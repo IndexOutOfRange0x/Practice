@@ -7,11 +7,11 @@ public class User {
 
     @Id
     @GeneratedValue
-    private long id;
+    private long Id;
 
     private String userName;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "role_id")
     private Role role;
 
@@ -23,11 +23,11 @@ public class User {
     }
 
     public long getId() {
-        return id;
+        return Id;
     }
 
     public void setId(long id) {
-        this.id = id;
+        this.Id = id;
     }
 
     public String getUserName() {

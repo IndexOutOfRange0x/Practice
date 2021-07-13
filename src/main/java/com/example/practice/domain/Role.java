@@ -9,7 +9,7 @@ public class Role {
 
     @Id
     @GeneratedValue
-    private long id;
+    private long Id;
 
     private String roleName;
 
@@ -21,11 +21,11 @@ public class Role {
     }
 
     public long getId() {
-        return id;
+        return Id;
     }
 
     public void setId(long id) {
-        this.id = id;
+        this.Id = id;
     }
 
     public String getRoleName() {
