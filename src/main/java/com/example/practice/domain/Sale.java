@@ -6,12 +6,13 @@ import java.util.Date;
 @Entity
 public class Sale {
     @Id
+    @GeneratedValue
     private long Id;
 
-    @OneToOne
+    @ManyToOne
     private User buyer;
 
-    @OneToOne
+    @ManyToOne
     private Product product;
 
     private Date dateOfOperation;

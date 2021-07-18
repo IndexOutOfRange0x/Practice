@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Product {
     @Id
+    @GeneratedValue
     private long id;
 
     private String name;

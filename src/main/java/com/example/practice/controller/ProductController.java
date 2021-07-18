@@ -30,7 +30,7 @@ public class ProductController {
                 .orElseThrow(() -> new RuntimeException("Product not found"));
     }
 
-    @PutMapping("product/{id}")
+    @PutMapping("products/{id}")
     Product updateProduct(@RequestBody Product newProduct, @PathVariable Long id){
         return repository.findById(id).map(product -> {
             product.setName(newProduct.getName());

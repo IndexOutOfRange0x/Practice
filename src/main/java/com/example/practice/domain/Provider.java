@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Provider {
     @Id
+    @GeneratedValue
     private long id;
 
     private String nameOfOrganization;
